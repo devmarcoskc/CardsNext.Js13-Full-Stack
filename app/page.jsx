@@ -11,9 +11,12 @@ const Home = () => {
         </span>
       </h1>
       <p className="desc text-center">
-        CardsForYou é uma "open-source" para você compartilhar seus cartões de mensagens com seus amigos
-        e com a comunidade! 
+        CardsForYou foi feito para você compartilhar seus cartões de mensagens com a comunidade!
+        Seja positivo e espalhe sua mensagem! 
       </p>
+      <span className="text-red-400 text-sm mt-2">
+        Devido o sistema de hospedagem do projeto ser gratuita, as funcionalidades podem demorar alguns segundos! Seja paciente.
+      </span>
 
       {/*FEED*/}
       <Feed/>

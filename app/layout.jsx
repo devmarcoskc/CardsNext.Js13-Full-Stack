@@ -3,8 +3,8 @@ import Nav from '@components/Nav';
 import Provider from '@components/Provider';
 
 export const metadata = {
-    title: 'Seus prompts',
-    description: 'Descubra e compartilhe AI prompts'
+    title: 'CardsForYou',
+    description: 'Compartilhe seus cartões de mensagens com a comunidade, seja positivo!'
 }
 
 const RootLayout = ({children}) => {
