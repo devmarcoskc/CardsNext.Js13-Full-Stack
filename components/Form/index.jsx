@@ -4,8 +4,8 @@ const Form = ({type, post, setPost, submitting, handleSubmit}) => {
   return (
     <section className="w-full max-w-full flex-start flex-col">
       <h1 className="head_text text-left">
-        <span className="blue_gradient">
-          {type} Post
+        <span className="text-yellow-100">
+          {type} seu cartão
         </span>
       </h1>
       <p className="desc text-left max-w-md">
@@ -15,13 +15,13 @@ const Form = ({type, post, setPost, submitting, handleSubmit}) => {
 
       <form
         onSubmit={handleSubmit}
-        className="mt-10 w-full max-w-2xl flex flex-col
+        className="mt-10 mb-4 w-full max-w-2xl flex flex-col
         gap-7 glassmorphism"
       >
         <label>
           <span className="font-satoshi font-semibold
-          text-base text-gray-700">
-            Seus cartões de mensagem:
+          text-base text-yellow-100">
+            Seu cartão de mensagem:
           </span>
 
           <textarea
@@ -35,7 +35,7 @@ const Form = ({type, post, setPost, submitting, handleSubmit}) => {
 
         <label>
           <span className="font-satoshi font-semibold
-          text-base text-gray-700">
+          text-base text-yellow-100">
             Tag {``}
             <span>(#produto, #desenvolvimentoweb, #ideia)</span>
           </span>
@@ -50,7 +50,7 @@ const Form = ({type, post, setPost, submitting, handleSubmit}) => {
         </label>
 
         <div className="flex-end mx-3 mb-5 gap-4">
-          <Link href="/" className="text-gray-500 text-sm">
+          <Link href="/" className="text-yellow-100 text-sm">
             Cancelar
           </Link>
 

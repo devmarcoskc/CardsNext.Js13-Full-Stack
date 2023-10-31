@@ -36,14 +36,14 @@ const Nav = () => {
       <div className="sm:flex hidden">
         {session?.user ? (
           <div className="flex gap-3 md:gap-5">
-            <Link href="/create-prompt" className="black_btn">
+            <Link href="/create-prompt" className="default_btn">
               Criar Post
             </Link>
 
             <button 
               type="button" 
               onClick={signOut}
-              className="outline_btn"
+              className="default_btn"
             >
               Sair
             </button>
@@ -66,7 +66,7 @@ const Nav = () => {
                 type="button"
                 key={provider.name}
                 onClick={() => signIn(provider.id)}
-                className="black_btn"
+                className="default_btn"
               >
                 Entrar
               </button>
@@ -126,7 +126,7 @@ const Nav = () => {
                   type="button"
                   key={provider.name}
                   onClick={() => signIn(provider.id)}
-                  className="black_btn"
+                  className="default_btn"
                 >
                   Entrar
                 </button>
