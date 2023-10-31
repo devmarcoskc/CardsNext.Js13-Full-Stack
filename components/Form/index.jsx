@@ -9,8 +9,8 @@ const Form = ({type, post, setPost, submitting, handleSubmit}) => {
         </span>
       </h1>
       <p className="desc text-left max-w-md">
-        {type} e compartilhe cartões com a comunidade, e deixa
-        sua imaginação tomar conta. 
+        {type} e compartilhe cartões com a comunidade. Deixe
+        sua imaginação tomar conta, seja positivo!
       </p>
 
       <form
