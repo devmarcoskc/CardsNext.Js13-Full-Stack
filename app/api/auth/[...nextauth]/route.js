@@ -22,14 +22,19 @@ const handler = NextAuth({
         try {
           await connectToDB();
   
-          // check if user already exists
           const userExists = await User.findOne({ email: profile.email });
+
+          const generateUsername = (name) => {
+            const sanitizedName = name.replace(/\s/g, "").toLowerCase();
+            const maxLength = 20;
+            return sanitizedName.substring(0, maxLength);
+          };
   
-          // if not, create a new document and save user in MongoDB
           if (!userExists) {
+            const username = generateUsername(profile.name);
             await User.create({
               email: profile.email,
-              username: profile.name.replace(" ", "").toLowerCase(),
+              username: username,
               image: profile.picture,
             });
           }
